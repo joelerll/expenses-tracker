@@ -1,0 +1,16 @@
+version: '3.4'
+services:
+  backend:
+    build:
+      context: ./backend/.devcontainer
+      target: dev
+    volumes:
+      - /var/run/docker.sock:/var/run/docker-host.sock 
+      - .:/workspace:cached
+    command: sleep infinity 
+  frontend:
+    build:
+      context: ./frontend/.devcontainer
+      target: dev
+    volumes:
+      - .:/workspace:cached

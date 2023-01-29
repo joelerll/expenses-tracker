@@ -1,8 +1,16 @@
 # Expenses manager
 
-## Backend
+## Development
 
-1. Run server
+
+
+### Backend
+
+1. Open devcontainer
+
+Run Dev Containers: Open Folder in Container and select backend folder
+
+2. Run server
 
 ```sh
 go run backend/main.go
